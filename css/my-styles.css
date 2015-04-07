@@ -184,8 +184,10 @@ padding-top: 180px;
 }
 
 .stories-header p {
-	margin-top: -60px;
-	margin-left: 55px;
+	margin-top: -70px;
+	margin-left: 80px;
+	font-size: 1.4em;
+	letter-spacing: 1px;
 }
 
 .story {
@@ -241,9 +243,29 @@ padding-top: 180px;
 	padding: 25px 20px;
 }
 
-
+/*
+.icon-camera:before {
+	content: "\e602";
+}
 
 .icon-mail:before {
+	content: "\e600";
+}
+
+.icon-facebook:before {
+	content: "\e601";
+}
+
+.icon-twitter:before {
+	content: "\e603";
+}*/
+
+
+.icon-camera:before {
+	content: "\e602";
+}
+
+.icon-envelope:before {
 	content: "\e600";
 }
 
@@ -256,5 +278,61 @@ padding-top: 180px;
 }
 
 
+/* =================================================================
+ 							ABOUT PAGE
+================================================================= */
 
+
+
+/* About Poy
+================================= */
+
+.about-layout {
+	height: 85vh;
+	margin-top: 20px;
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about-layout p {
+	opacity: 0.8;
+}
+
+/* Principles
+================================= */
+
+
+
+
+
+/* Read List
+================================= */
+
+.read-list {
+	height: 90vh;
+}
+
+.read-list li {
+	color: #333;
+	text-align: left;
+	list-style: circle;
+}
+
+.read-list a {
+	color: #333;
+}
+
+
+/* Podcasts
+================================= */
+
+.podcasts li {
+	list-style: none;
+	margin-left: -60px;
+}
+
+.podcasts a {
+	color: #333;
+}
 
