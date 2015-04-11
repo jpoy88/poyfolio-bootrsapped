@@ -127,10 +127,10 @@ padding-top: 180px;
 
 .works {
 	background-color: white;
-	height: 110vh;
+	height: 105vh;
 }
 
-.works h1, .stories-header h1{
+.works h1, .section-header h1{
 	padding-bottom: 50px;
 	font-size: 5em;
 }
@@ -167,7 +167,7 @@ padding-top: 180px;
 /* Stories
 ================================= */
 
-.stories-header {
+.section-header {
 	height: 50vh;
 	background: url('../img/storiesBackground.jpg') no-repeat;
 	background-size: cover;
@@ -179,18 +179,18 @@ padding-top: 180px;
 	background-color: white;
 }
 
-.stories-header h1 {
+.section-header h1 {
 	padding-top: 40px;
 }
 
-.stories-header p {
+.section-header p {
 	margin-top: -70px;
 	margin-left: 80px;
 	font-size: 1.4em;
 	letter-spacing: 1px;
 }
 
-.story {
+.story, .work {
 	height: 60vh;
 	width: 90%;
 	background-size: 100%;
@@ -279,6 +279,44 @@ padding-top: 180px;
 
 
 /* =================================================================
+ 							WORKS PAGE
+================================================================= */
+
+
+.work {
+	height: 60vh;
+	width: 60%;
+
+}
+
+
+/* =================================================================
+ 							STORIES PAGE
+================================================================= */
+
+.section-header {
+	margin-top: 20px;
+}
+
+.section-header p + br + p {
+	margin-top: 15px;
+	font-size: 1em;
+	font-weight: 100;
+	letter-spacing: 2px;
+	opacity: 0.8;
+}
+
+.inside-stories .story {
+	margin-bottom: 20px;
+}
+
+.inside-stories .story:hover {
+	border: solid 10px rgba(174, 55, 46, 0.8);
+}
+
+
+
+/* =================================================================
  							ABOUT PAGE
 ================================================================= */
 
@@ -299,12 +337,42 @@ padding-top: 180px;
 	opacity: 0.8;
 }
 
-/* Principles
+/* Readlist & Podcast
 ================================= */
 
+.read-list h1, .podcasts h1 {
+	color: rgba(174, 55, 46, 0.8);
+}
+
+.read-list li, .podcasts li {
+	font-size: 1.2em;
+	opacity: 0.9;
+}
+
+.about-layout a {
+	color: #333;
+	text-decoration: none;
+}
 
 
+.book {
+	font-family: 'EB Garamond', Garamond, serif;
+	font-weight: 700;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	color: rgba(174, 55, 46, 0.9);
+}
 
+.by {
+	font-family: 'EB Garamond', Garamond, serif;
+	font-size: 0.7em;
+	font-style: italic;
+	font-color: #333;
+}
+
+.author {
+	font-weight: 300;
+}
 
 /* Read List
 ================================= */
@@ -316,12 +384,9 @@ padding-top: 180px;
 .read-list li {
 	color: #333;
 	text-align: left;
-	list-style: circle;
+	list-style: none;
 }
 
-.read-list a {
-	color: #333;
-}
 
 
 /* Podcasts
@@ -332,7 +397,5 @@ padding-top: 180px;
 	margin-left: -60px;
 }
 
-.podcasts a {
-	color: #333;
-}
+
 
