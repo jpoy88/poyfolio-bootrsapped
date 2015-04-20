@@ -14,6 +14,10 @@ Black(readable): #333; rgba(51, 51, 51, 0.5);
 Tan: #FFEBCE; rgba(255, 235, 206, 0.5);
 */
 
+/*
+Works Image Cover: 1478 x 979 px
+
+*/
 
 
 /* Webfonts */
@@ -58,6 +62,7 @@ body {
 .jumbotron {
 	text-align: center;
 	padding-bottom: 50px;
+	background-color: white;
 }
 
 .container {
@@ -175,9 +180,6 @@ padding-top: 180px;
 	color: white;
 }
 
-.stories {
-	background-color: white;
-}
 
 .section-header h1 {
 	padding-top: 40px;
@@ -214,11 +216,40 @@ padding-top: 180px;
 	opacity: 0.7;
 }
 
-.story:hover {
+.story .col-sm-6 p, .inside-stories p {
+	text-align: justify;
+}
+
+.story:hover, .inside-works .work:hover {
 	background-color: white;
 	opacity: .85;
 	transition: all .5s;
 }
+
+
+#dropcap {
+	font-size: 5em;
+	font-family: 'EB Garamond', Garamond, serif;
+	display: block;
+	float: left;
+	width: .8em;
+	height: .7em;
+	line-height: 0.8;
+	margin: 0;
+	padding-right: 10px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+
+.small-caps {
+	font-family: 'EB Garamond', Garamond, serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	font-variant: small-caps;
+}
+
+
 
 /* Footer
 ================================= */
@@ -286,9 +317,25 @@ padding-top: 180px;
 .work {
 	height: 60vh;
 	width: 60%;
-
+	margin-top: 100px;
 }
 
+.inside-works a {
+	text-decoration: none;
+	
+}
+
+.inside-works h2 {
+	color: rgba(174, 55, 46, 0.8);
+	font-family: 'EB Garamond', Garamond, serif;
+	font-size: 2.5em;
+}
+
+.inside-works .work:hover + h2 {
+	color: #333;
+	opacity: 0.9;
+	transition: all .5s;
+}
 
 /* =================================================================
  							STORIES PAGE
@@ -310,11 +357,31 @@ padding-top: 180px;
 	margin-bottom: 20px;
 }
 
-.inside-stories .story:hover {
+.inside-stories .story:hover, .inside-works .work:hover {
 	border: solid 10px rgba(174, 55, 46, 0.8);
 }
 
+.story-tell p:nth-child(3){
+	text-indent: ;
+}
 
+.story-tell p {
+	margin-bottom: 50px;
+}
+
+.story-tell img {
+	margin: 70px auto;
+}
+
+
+
+.inside-stories h4 {
+	opacity: 0.5;
+}
+
+.self-talk {
+	color: rgba(174, 55, 46, 0.9);
+}
 
 /* =================================================================
  							ABOUT PAGE
